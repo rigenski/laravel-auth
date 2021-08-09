@@ -12,14 +12,14 @@
                     <div class="auth_group">
                         <form class="auth_form" action={{ route('postLogin') }} method="post">
                             @csrf
-                            <input type="email" id="email" name="email" class="auth_input" placeholder="Email" value={{old('email')}}>
+                            <input type="email" id="email" name="email" class="auth_input" placeholder="Email" autocomplete="off" value={{old('email')}} >
                             @error('email')
                             <p class="auth_message">*{{ $message }}</p>
                             @enderror
                             @if(session('error'))
                                 <p class="auth_message">*{{ session('error') }}</p>
                             @endif
-                            <input type="password" id="password" name="password" class="auth_input" placeholder="Password" value={{old('password')}}>
+                            <input type="password" id="password" name="password" class="auth_input" placeholder="Password"  autocomplete="off" value={{old('password')}}>
                             @error('password')
                                 <p class="auth_message">*{{ $message }}</p>
                             @enderror

@@ -12,18 +12,18 @@
                     <div class="auth_group">
                         <form class="auth_form" action={{ route('postRegister') }} method="post">
                             @csrf
-                            <input type="text" id="name" name="name" class="auth_input" placeholder="Name" value={{old('name')}}>
+                            <input type="text" id="name" name="name" class="auth_input" placeholder="Name"  autocomplete="off" value={{old('name')}}>
                             @error('name')
                                 <p class="auth_message">*{{ $message }}</p>
                             @enderror
                             @if(session('error'))
                                 <p class="auth_message">*{{ session('error') }}</p>
                             @endif
-                            <input type="email" id="email" name="email" class="auth_input" placeholder="Email" value={{old('email')}}>
+                            <input type="email" id="email" name="email" class="auth_input" placeholder="Email"  autocomplete="off" value={{old('email')}}>
                             @error('email')
                                 <p class="auth_message">*{{ $message }}</p>
                             @enderror
-                            <input type="password" id="password" name="password" class="auth_input" placeholder="Password" value={{old('password')}}>
+                            <input type="password" id="password" name="password" class="auth_input" placeholder="Password"  autocomplete="off" value={{old('password')}}>
                             @error('password')
                                 <p class="auth_message">*{{ $message }}</p>
                             @enderror
@@ -36,7 +36,7 @@
                         <div class="auth_social">
                             <ul>
                                 <li>
-                                    <a class="auth_icon" href="#"><img src={{ asset('assets/icon/google-icon.png')}} alt=""></a>
+                                    <a class="auth_icon" href="#"><img src={{ asset('asset~s/icon/google-icon.png')}} alt=""></a>
                                 </li>
                                 <li>
                                     <a class="auth_icon" href="#"><img src={{ asset('assets/icon/facebook-icon.png')}} alt=""></a>
