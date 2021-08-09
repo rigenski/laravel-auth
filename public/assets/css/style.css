@@ -1,0 +1,189 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("/public/assets/font/Montserrat-Medium.ttf");
+}
+
+* {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    color: #082032;
+}
+
+/* AUTHENTICATION */
+
+.auth {
+    background-color: #5896f3;
+}
+
+.container {
+    padding-right: 12%;
+    padding-left: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth {
+    height: 100vh;
+}
+
+.auth_card {
+    display: flex;
+    height: 32rem;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.8rem;
+    box-shadow: -2px 4px 20px rgb(0 0 0 / 0.1);
+}
+
+.auth_left {
+    flex: 1;
+}
+
+.auth_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.8rem 0 0 0.8rem;
+    max-width: 32rem;
+}
+
+.auth_right {
+    width: 24rem;
+    padding: 2.4rem;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.auth_title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.auth_group {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth_form {
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+
+.auth_input {
+    display: block;
+    width: 100%;
+    height: 2.4rem;
+    margin-bottom: 0.4rem;
+    border: none;
+    border-bottom: 2px solid #3782f3;
+}
+
+.auth_message {
+    width: 100%;
+    color: #f33737;
+    font-weight: 600;
+    font-size: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+
+.auth_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.auth_util {
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: #3782f3;
+}
+
+.auth_submit {
+    margin-top: 0.4rem;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    background-color: #3782f3;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.auth_social {
+    width: 100%;
+    margin-top: 1.2rem;
+}
+
+.auth_social ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.auth_social ul li {
+    margin: 0 0.4rem;
+}
+
+.auth_icon img {
+    width: 2.8rem;
+}
+
+.auth_alert {
+    width: 100%;
+    color: #f33737;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+/* HOME */
+
+.wrapper {
+    text-align: center;
+}
+
+.home_title {
+    font-size: 2.4rem;
+}
+
+.home_desc {
+    font-size: 1.2rem;
+}
+
+.logout {
+    margin-top: 3.6rem;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    background-color: #f33737;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+}
